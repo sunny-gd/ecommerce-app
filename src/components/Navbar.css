@@ -1,0 +1,149 @@
+/* Navbar.css - Complete Solution */
+.navbar {
+  background-color: #282c34 !important;
+  color: white !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding: 1rem 2rem !important;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Left-aligned logo */
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-right: auto; /* Pushes everything else to the right */
+}
+
+.desktop-nav {
+  margin-left: auto; /* Ensures right alignment */
+}
+
+/* Right-aligned desktop navigation */
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-left: auto; /* Ensures right alignment */
+}
+
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+  padding: 0.5rem 0;
+}
+
+.nav-item:hover {
+  opacity: 0.8;
+}
+
+.nav-cart {
+  position: relative;
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: transform 0.2s;
+  display: flex;
+  align-items: center;
+}
+
+.nav-cart:hover {
+  transform: scale(1.1);
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: #ff4757;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+/* Mobile toggle button */
+.mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Mobile navigation */
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  background-color: #282c34;
+  padding: 0 2rem 1rem;
+  width: 100%;
+}
+
+.mobile-item {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #444;
+}
+
+.mobile-cart {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 0;
+  position: relative;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+}
