@@ -6,13 +6,13 @@ import './Products.css';
 
 // Mock product data
 const mockProducts = [
-  { id: 1, name: 'Premium Headphones', price: 199.99, image: 'https://via.placeholder.com/300' },
-  { id: 2, name: 'Wireless Keyboard', price: 89.99, image: 'https://via.placeholder.com/300' },
-  { id: 3, name: 'Bluetooth Speaker', price: 129.99, image: 'https://via.placeholder.com/300' },
-  { id: 4, name: 'Smart Watch', price: 249.99, image: 'https://via.placeholder.com/300' },
-  { id: 5, name: 'Gaming Mouse', price: 59.99, image: 'https://via.placeholder.com/300' },
-  { id: 6, name: '4K Monitor', price: 399.99, image: 'https://via.placeholder.com/300' },
-];
+  { id: 1, name: 'Premium Headphones', price: 199.99, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
+  { id: 2, name: 'Wireless Keyboard', price: 89.99, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
+  { id: 3, name: 'Bluetooth Speaker', price: 129.99, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
+  { id: 4, name: 'Smart Watch', price: 249.99, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
+  { id: 5, name: 'Gaming Mouse', price: 59.99, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
+  { id: 6, name: '4K Monitor', price: 399.99, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=300&q=80' },
+  ];
 
 const Products = () => {
   const dispatch = useDispatch();
