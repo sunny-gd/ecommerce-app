@@ -1,8 +1,8 @@
 {
-  "name": "ecommerce-app",
+  "name": "shopea",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shopea.netlify.app/ecommerce-app",
+  "homepage": "https://shopea.netlify.app",
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
     "axios": "^1.8.4",
