@@ -4,7 +4,8 @@ import {
   selectTotalAmount,
   selectTotalQuantity,
   removeItem,
-  clearCart
+  clearCart,
+  addItem
 } from './cartSlice';
 import './Cart.css';
 
@@ -20,6 +21,14 @@ const Cart = () => {
 
   const handleClearCart = () => {
     dispatch(clearCart());
+  };
+
+  const handleIncrement = (item) => {
+    dispatch(addItem(item));
+  };
+
+  const handleDecrement = (id) => {
+    dispatch(removeItem(id));
   };
 
   return (
@@ -38,7 +47,19 @@ const Cart = () => {
                   <h3>{item.name}</h3>
                   <p>${item.price.toFixed(2)}</p>
                   <div className="quantity-controls">
+                    <button 
+                      onClick={() => handleDecrement(item.id)}
+                      className="quantity-btn"
+                    >
+                      -
+                    </button>
                     <span>Qty: {item.quantity}</span>
+                    <button 
+                      onClick={() => handleIncrement(item)}
+                      className="quantity-btn"
+                    >
+                      +
+                    </button>
                     <button 
                       onClick={() => handleRemoveItem(item.id)}
                       className="remove-btn"
