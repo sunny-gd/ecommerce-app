@@ -2,7 +2,7 @@
   "name": "ecommerce-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sunny-gd.github.io/ecommerce-app",
+  "homepage": "https://shopea.netlify.app/ecommerce-app",
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
     "axios": "^1.8.4",
