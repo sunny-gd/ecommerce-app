@@ -11,7 +11,7 @@ import './App.css';
 function App() {
   return (
     <Provider store={store}>
-      <Router basename="/ecommerce-app">
+      <Router>
         <div className="App">
           <Navbar />
           <Routes>
