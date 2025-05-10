@@ -121,12 +121,13 @@
 
 @media (max-width: 768px) {
   .cart-item {
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   
   .cart-item img {
-    width: 100%;
-    height: auto;
+    width: 100px;
+    height: 100px;
   }
 }
 

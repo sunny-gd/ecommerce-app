@@ -6,6 +6,7 @@ import Products from './features/products/Products';
 import Cart from './features/cart/Cart';
 import About from './components/About';
 import Footer from './components/Footer';
+import Checkout from './features/checkout/Checkout';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Products />} />
             <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="/about" element={<About />} />
           </Routes>
           <Footer />

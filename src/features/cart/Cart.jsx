@@ -7,6 +7,7 @@ import {
   clearCart,
   addItem
 } from './cartSlice';
+import { useNavigate } from 'react-router-dom';
 import './Cart.css';
 
 const Cart = () => {
@@ -14,6 +15,7 @@ const Cart = () => {
   const totalAmount = useSelector(selectTotalAmount);
   const totalQuantity = useSelector(selectTotalQuantity);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const handleRemoveItem = (id) => {
     dispatch(removeItem(id));
@@ -29,6 +31,10 @@ const Cart = () => {
 
   const handleDecrement = (id) => {
     dispatch(removeItem(id));
+  };
+
+  const handleProceedToCheckout = () => {
+    navigate('/checkout');
   };
 
   return (
@@ -80,7 +86,7 @@ const Cart = () => {
             >
               Clear Cart
             </button>
-            <button className="checkout-btn">
+            <button className="checkout-btn" onClick={handleProceedToCheckout}>
               Proceed to Checkout
             </button>
           </div>
