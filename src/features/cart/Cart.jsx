@@ -42,7 +42,7 @@ const Cart = () => {
           <div className="cart-items">
             {cartItems.map((item) => (
               <div key={item.id} className="cart-item">
-                <img src={item.image} alt={item.name} />
+                <img src={item.images && item.images.length > 0 ? item.images[0] : item.image} alt={item.name} />
                 <div className="item-details">
                   <h3>{item.name}</h3>
                   <p>${item.price.toFixed(2)}</p>
