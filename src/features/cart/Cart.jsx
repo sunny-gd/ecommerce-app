@@ -5,7 +5,8 @@ import {
   selectTotalQuantity,
   removeItem,
   clearCart,
-  addItem
+  addItem,
+  decrementItem
 } from './cartSlice';
 import { useNavigate } from 'react-router-dom';
 import './Cart.css';
@@ -30,7 +31,7 @@ const Cart = () => {
   };
 
   const handleDecrement = (id) => {
-    dispatch(removeItem(id));
+    dispatch(decrementItem(id));
   };
 
   const handleProceedToCheckout = () => {
